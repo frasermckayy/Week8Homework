@@ -16,7 +16,7 @@ public class Runner {
 
 
             Competition competition = new Competition("Premier League", 80000);
-            DBHelper.save(L)
+            DBHelper.save(Competition)
 
 
             Player player1 = new Player("Steven Gerrard", 28);
