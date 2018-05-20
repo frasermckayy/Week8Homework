@@ -1,7 +1,7 @@
 package models;
 
 import javax.persistence.*;
-
+import java.util.List;
 
 
 @Entity
@@ -31,7 +31,7 @@ public abstract class Competition {
         this.id = id;
     }
 
-    @Column
+    @Column(name="names")
     public String getName() {
         return name;
     }
@@ -39,8 +39,7 @@ public abstract class Competition {
     public void setName(String name) {
         this.name = name;
     }
-
-
+    @Column(name="teams")
     public List<Team> getTeams() {
         return teams;
     }
